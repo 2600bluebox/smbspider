@@ -1,0 +1,23 @@
+# Nmap 7.93 scan initiated Tue Apr 25 15:13:13 2023 as: nmap -sU -A -sV -sC -oN nmap_udp 10.129.202.20
+Nmap scan report for 10.129.202.20
+Host is up (0.034s latency).
+Not shown: 998 closed udp ports (port-unreach)
+PORT    STATE         SERVICE VERSION
+68/udp  open|filtered dhcpc
+161/udp open          snmp    net-snmp; net-snmp SNMPv3 server
+| snmp-info: 
+|   enterprise: net-snmp
+|   engineIDFormat: unknown
+|   engineIDData: 5b99e75a10288b6100000000
+|   snmpEngineBoots: 10
+|_  snmpEngineTime: 23m52s
+Too many fingerprints match this host to give specific OS details
+Network Distance: 2 hops
+
+TRACEROUTE (using port 80/tcp)
+HOP RTT      ADDRESS
+1   29.58 ms 10.10.14.1
+2   29.79 ms 10.129.202.20
+
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Apr 25 15:31:48 2023 -- 1 IP address (1 host up) scanned in 1114.76 seconds
